@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!--
+    + kardeş unsur
+    > içinde unsur
+    ^ unsurun içinden çıkıp başka bir unsur oluşturmak için
+    * kaç adet istediğimize göre kullanabiliriz
+    . class oluşturmak için
+    # id oluşturmak için
+    lorem - rastgele metin oluşturur
+-->
+
+<!-- h1+p+h2+p+p+h3 -->
+<h1></h1>
+<p></p>
+<h2></h2>
+<p></p>
+<p></p>
+<h3></h3>
+
+<!-- h1+p*2+ul>li*3^p*2+h2 -->
+<h1></h1>
+<p></p>
+<p></p>
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+<p></p>
+<p></p>
+<h2></h2>
+
+<!-- ul>li*2>lorem2^^p*3>lorem4^^h3>Merhaba -->
+<ul>
+    <li>Lorem, ipsum.</li>
+    <li>Optio, sint.</li>
+</ul>
+<p>Lorem ipsum dolor sit.</p>
+<p>Incidunt necessitatibus deserunt debitis.</p>
+<p>Magnam saepe quo autem!</p>
+<h3>Lorem, ipsum.</h3>
+
+
+<!-- ol>li*3>lorem3^^ul>li*2>lorem2^^p>lorem5 -->
+<ol type="I">
+    <li>Lorem, ipsum dolor.</li>
+    <li>Tempore, ad aspernatur.</li>
+    <li>Itaque, in dolore!</li>
+</ol>
+<ul style="list-style-type:none">
+    <li>Lorem, ipsum.</li>
+    <li>Eveniet, quo?</li>
+</ul>
+<p>Lorem ipsum dolor sit amet.</p>
+
+
+<!-- div>p#item*6>lorem10 -->
+<div>
+    <p id="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, quasi!</p>
+    <p id="item">Sunt deserunt a iste quae dolor unde magnam, perspiciatis alias?</p>
+    <p id="item">Officia consequatur quia soluta ab distinctio nisi minima quasi nam!</p>
+    <p id="item">Vero impedit corrupti ad incidunt, iste rem numquam illum eos?</p>
+    <p id="item">Sapiente iure officia similique nesciunt incidunt necessitatibus amet eius dolorem!</p>
+    <p id="item">Eos, consequatur. Repellat et iusto nihil dolorum optio esse neque!</p>
+</div>
+
+<ul>
+    <li class="item1"></li>
+    <li class="item2"></li>
+    <li class="item3"></li>
+    <li class="item4"></li>
+</ul>
+
+<!-- sınıf çağırmak i.in (.)
+-->
+<ul class="h">
+    <li class="sinif"></li>
+</ul>
+    <!-- Bir id özelliği eklemek için ise # ifadesini kullanırız.
+     Yeni bir örnekle id özelliği eklemeyi görelim. ul#id1>li#id2 diyerek aşağıda gördüğünüz kodu oluşturabiliriz. -->
+
+<ul id="gel">
+    <li id="git"></li>
+    <li id="git"></li>
+</ul>
+
+<!-- Fakat amacım farklı id’lere sahip üç adet li tagı oluşturmaksa ul>li#id1+li#id2+li#id3 yapılır. -->
+
+<!-- ul.sinif#gel>li.fatih#ben+li.nuri#sen+li.muri#o -->
+<ul class="sinif" id="gel">
+    <li class="fatih" id="ben"></li>
+    <li class="nuri" id="sen"></li>
+    <li class="muri" id="o"></li>
+</ul>
+</body>
+</html>

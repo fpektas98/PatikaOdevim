@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="https://picsum.photos/300/300" align="left" alt="Reism">
+    <!-- lorem picsum adlı web sitesinden görsel bulabilrim -->
+
+    <!-- ya da klasörden bir görsel yükleyebiliriz -->
+    <img src="images/KediGozu.png" align="right" width="300" height="300" alt="Kedi Gözü" title="KEdinin gözü">
+
+<!-- Title özelliği kullanıcıyı bilgilendirme amacı taşır.
+     Cursor(mouse imleci) ile görselin üzerine gelince bu özelliğe verilen text mesajı görünür.
+     Ek açıklama gerektirecek resimlerde kullanabiliriz. Bilgilendirme amacı taşır. -->
+
+     <!-- border Kullanımı
+        Görseli belirtilen kalınlıkta çerçeve içine alır. Daha gelişmiş CSS Border özelliği bunun yerine kullanılabilir.
+        Aşağıda border örneği: Görsele 3 pixel kalınlıkta border verir.
+     -->
+
+     <img src="https://picsum.photos/300/300" align="left" alt="ÇErçeveli" title="Çerçeveli" border="20">
+
+     <!--
+        align Kullanımı
+    Web sayfasında resmin gözükeceği pozisyonu belirlemede align özelliği kullanılır. 
+    Bu özelliğe verilebilecek değerler şunlardır: left, right. Görselin sağa veya sola yaslı çıkmasını sağlar.
+     -->
+
+     <!-- link vermek için <a></a> etiketi kullanılır -->
+     <a href="https://www.google.com.tr/?hl=tr"><img src="https://picsum.photos/300/300"  border="10" align="right" alt="pkts" title="Sağa Yaslı"></a>
+
+     <!--Bu olay görsel yüklenmesi tamamlandığında çalışacak fonksiyonu belirler.
+        Herhangi bir nedenle görsel yüklenemezse ya da belirtilen adreste resim yoksa fonksiyon çalışmaz.
+        Aşağıdaki örnekte görsel yüklenmesi tamamlandığında resimYuklendi() fonksiyonu çalışacak ve ekrana Resim Yüklendi.
+        uyarısı JavaScript tarafından bastırılacak. Bu konuyu ileride çok daha detaylı göreceğiz.-->
+
+        <img src="https://picsum.photos/300/300" onload="resimYuklendi()" />
+</body>
+<script>
+    function resimYuklendi(){
+        alert("Resim yüklendi.");
+    }
+</script>
+</html>
